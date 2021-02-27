@@ -21,7 +21,26 @@ button {
 
 input {
     margin-left: 10px;
+    color:#1b0a00;
 }
+
+input[type=text] {
+    box-sizing: border-box;
+    border: none;
+    color: black;
+  }
+
+input[type=tel] {
+    box-sizing: border-box;
+    border: none;
+    color: black;
+  }
+
+  input[type=email] {
+    box-sizing: border-box;
+    border: none;
+    color: black;
+  }
 
 .area {
     display: none;
