@@ -66,6 +66,8 @@ form {
 
 label {
     margin-right: 10px;
+    color: #FF914D;
+    font-size:medium;
 }
 
 input {
@@ -79,3 +81,115 @@ input {
 .insuranceDialog {
     color: black;
 }
+
+.totalCostLine {
+    font-size: x-large;
+    font-weight: bold;
+    color: #FF914D;
+}
+
+.totalCost {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.labelOptions {
+    color:#FFB282;
+}
+
+.welcome {
+    margin-bottom: 20px;
+}
+
+.identitybutton {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 500px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-bottom: 10px;
+  }
+
+.identitybutton:hover {
+    background-color: #FFBF98;
+    color:#1b0a00;
+
+}
+  
+  .identitybutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    display: block;
+  }
+  
+  .senderbutton-sub {
+    font-size: small;
+    display: block;
+    transition: none;
+  }
+
+  .identitybutton span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .identitybutton:hover span {
+    padding-right: 25px;
+    font-weight: bold;
+  }
+
+  .identitybutton:active span {
+    padding-right: 25px;
+    font-weight: bold;
+  }
+  
+  .identitybutton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .riderWelcome {
+      margin: 50px;
+      font-weight: bold;
+  }
+
+  .driverWelcome {
+    margin: 50px;
+    font-weight: bold;
+}
+
+  .riderJoin {
+      margin-left: 50px;
+      font-size: large;
+  }
+
+  .driverJoin {
+    margin-left: 50px;
+    font-size: large;
+}
+
+
+  .email {
+      color: #FFBF98;
+  }
+
+  .email:hover {
+      color: #f4511e;
+      text-decoration: none;
+  }
+
+  footer {
+      margin-top: 100px;
+      margin-bottom: 20px;
+  }

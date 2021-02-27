@@ -12,7 +12,8 @@
 <body>
 
     <div class="boxbg container-fluid">
-
+    
+    <hr><hr>
     <h3>Sender Details</h3>
     <hr>
     <form action="">
@@ -34,9 +35,9 @@
         <div class="senderInputs senderLocation">
             <label for="senderLocation">Sender location: </label><br>
             <input type="radio" id="Kepong" name="senderLocation" value="Kepong" required>
-            <label for="Kepong">Kepong</label><br>
+            <label for="Kepong" class="labelOptions">Kepong</label><br>
             <input type="radio" id="Ampang" name="senderLocation" value="Ampang" required>
-            <label for="Ampang">Ampang</label><br>  
+            <label for="Ampang" class="labelOptions">Ampang</label><br>  
         </div>
     </form>
         <hr><hr>
@@ -61,22 +62,22 @@
         <div class="receiverLocationInputs">
             <label for="receiverLocation">Receiver location: </label><br>
             <input type="radio" id="Perak" name="receiverState" value="Perak" data-id="perak" class="form-switch"  required>
-            <label for="Perak">Perak</label><br>
+            <label for="Perak" class="labelOptions">Perak</label><br>
             <input type="radio" id="Johor" name="receiverState" value="Johor" data-id="johor" class="form-switch" required>
-            <label for="Johor">Johor</label><br>  
+            <label for="Johor" class="labelOptions">Johor</label><br>  
     
             <div class="area area-perak" data-id="perak">
                 <input type="radio" id="Taiping" name="receiverArea" value="Taiping" required>
-                <label for="Taiping">Taiping</label><br>
+                <label for="Taiping" class="labelOptions">Taiping</label><br>
                 <input type="radio" id="Ipoh" name="receiverArea" value="Ipoh" required>
-                <label for="Ipoh">Ipoh</label><br>
+                <label for="Ipoh" class="labelOptions">Ipoh</label><br>
             </div>
     
             <div class="area area-johor" data-id="johor">
                 <input type="radio" id="Johor Bahru" name="receiverArea" value="Johor Bahru" required>
-                <label for="Johor Bahru">Johor Bahru</label><br>
+                <label for="Johor Bahru" class="labelOptions">Johor Bahru</label><br>
                 <input type="radio" id="Batu Pahat" name="receiverArea" value="Batu Pahat" required>
-                <label for="Batu Pahat">Batu Pahat</label><br>
+                <label for="Batu Pahat" class="labelOptions">Batu Pahat</label><br>
             </div>
             
         </div>
@@ -89,11 +90,11 @@
         <div class="itemSW">
             <label for="itemSizeWeight">Item size & weight: </label><br>
             <input type="radio" id="S" name="itemSizeWeight" value="S" required>
-            <label for="S">SMALL - 34cm x 25cm x 8cm - min 2kg (RM5.00)</label><br>
+            <label for="S" class="labelOptions">SMALL - 34cm x 25cm x 8cm - min 2kg (RM5.00)</label><br>
             <input type="radio" id="M" name="itemSizeWeight" value="M" required>
-            <label for="M">MEDIUM - 34cm x 25cm x 15cm - min 5kg (+ RM5.00)</label><br>  
+            <label for="M" class="labelOptions">MEDIUM - 34cm x 25cm x 15cm - min 5kg (+ RM5.00)</label><br>  
             <input type="radio" id="L" name="itemSizeWeight" value="L" required>
-            <label for="L">LARGE - 38cm x 32cm x 20cm - min 10kg (+ RM10.00)</label><br>  
+            <label for="L" class="labelOptions">LARGE - 38cm x 32cm x 20cm - min 10kg (+ RM10.00)</label><br>  
         </div>
 
         <div class="insuranceOption">
@@ -125,9 +126,9 @@
 
             <br>
             <input type="radio" id="insuranceYes" name="insuranceOption" value="yes" required>
-            <label for="insuranceYes">Yes, please</label><br>
+            <label for="insuranceYes" class="labelOptions">Yes, please</label><br>
             <input type="radio" id="insuranceNo" name="insuranceOption" value="no" required>
-            <label for="insuranceNo">No thank you</label><br>
+            <label for="insuranceNo" class="labelOptions">No thank you</label><br>
         </div>
         <br>
     </form>
@@ -157,7 +158,7 @@
                         <p>Item size & weight: <span id='show_itemSizeWeight'></span></p>
                         <p>JIFFY Protection: <span id='show_insuranceOption'></span></p>
                         <br>
-                        <p>Total cost: RM<span id='show_totalCost'></span></p>
+                        <p class="totalCostLine">Total cost: RM<span id='show_totalCost' class="totalCost"></span></p>
 
                     </div>
                     <div class="modal-footer">
@@ -170,6 +171,9 @@
         <br>
     
     </div>
+    <footer>
+        © Developed by Team Mailo
+    </footer>
 
 <script>
 

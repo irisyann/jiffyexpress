@@ -13,40 +13,28 @@
 <body>
 
     <div class="container-fluid">
-        <h2>Welcome to JIFFY Express!</h2>
-       
+        <div class="welcome">
+             <img src="/img/welcome.png" alt="Welcome to Jiffy Express">
+            <h2>Welcome to JIFFY Express!</h2>
+        </div>
+       <hr><hr>
+       <div class="container">
+
         <div>
-            <label for="selectIdentity">Select your identity: </label>
-            <form action="" id="userType">
-                <input type="radio" id="sender" name="selectIdentity" value="sender">
-                <label for="sender">Sender ( I want to send a parcel )</label><br>
-                <input type="radio" id="rider" name="selectIdentity" value="rider">
-                <label for="rider">Rider</label><br>  
-                <input type="radio" id="driver" name="selectIdentity" value="driver">
-                <label for="driver">Bus driver</label><br>  
-            </form>
+            <button onclick="document.location='sender.html'" class="button identitybutton">
+                <span>Sender</span>
+                <span class="senderbutton-sub">(I want to send a parcel)</span>
+            </button>
+            <button onclick="document.location='rider.html'" class="button identitybutton"><span>Rider </span></button>
+            <button onclick="document.location='busdriver.html'"class="button identitybutton"><span>Bus Driver </span></button>
         </div>
 
     </div>
 
-<script>
-$(document).ready(function() {
-    $("#sender").click(function() {
-        alert("Redirecting to order page...");
-        window.location.href = "sender.html";
-    });
-});
+    <footer>
+        © Developed by Team Mailo
+    </footer>
 
-// function identifyUser() {
-
-//    var userType = document.getElementsByName("selectIdentity")[0].value;
-//      if (userType === "sender")
-//     {
-//         msg = `you selected ${userType}`;
-//         document.getElementById("msg").innerHTML = msg;
-//     }
-// }
-</script>
 <script src="jiffy.js"></script>
 
 </body>
