@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="boxbg container-fluid">
+
+    <h3>Sender Details</h3>
+    <hr>
+    <form action="">
+        <div class="senderName senderInputs">
+            <label for="senderName">Sender name: </label>
+            <input type="text" id="senderName" placeholder="Name of sender" required>
+        </div>
+
+        <div class="senderInputs">
+            <label for="senderPhone">Sender contact number: </label>
+            <input type="tel" pattern="^(\+?6?01)[0-46-9]-*[0-9]{7,8}$" id="senderPhone" placeholder="012-3456789" required>
+        </div>
+
+        <div class="senderInputs">
+            <label for="senderEmail">Sender e-mail: </label>
+            <input type="email" id="senderEmail" placeholder="someone@email.com" required>
+        </div>
+
+        <div class="senderInputs senderLocation">
+            <label for="senderLocation">Sender location: </label><br>
+            <input type="radio" id="Kepong" name="senderLocation" value="Kepong" required>
+            <label for="Kepong">Kepong</label><br>
+            <input type="radio" id="Ampang" name="senderLocation" value="Ampang" required>
+            <label for="Ampang">Ampang</label><br>  
+        </div>
+    </form>
+        <hr><hr>
+        <h3>Receiver Details</h3>
+        <hr>
+    <form action="">
+        <div class="receiverName senderInputs">
+            <label for="receiverName">Receiver name: </label>
+            <input type="text" id="receiverName" placeholder="Name of receiver" required>  
+        </div>
+
+        <div class="senderInputs">
+            <label for="receiverPhone">Receiver contact number: </label>
+            <input type="tel" pattern="^(\+?6?01)[0-46-9]-*[0-9]{7,8}$" id="receiverPhone" placeholder="012-3456789" required>
+        </div>
+
+        <div class="senderInputs">
+            <label for="receiverEmail">Receiver e-mail: </label>
+            <input type="email" id="receiverEmail" placeholder="someone@email.com" required>
+        </div>
+
+        <div class="receiverLocationInputs">
+            <label for="receiverLocation">Receiver location: </label><br>
+            <input type="radio" id="Perak" name="receiverState" value="Perak" data-id="perak" class="form-switch"  required>
+            <label for="Perak">Perak</label><br>
+            <input type="radio" id="Johor" name="receiverState" value="Johor" data-id="johor" class="form-switch" required>
+            <label for="Johor">Johor</label><br>  
+    
+            <div class="area area-perak" data-id="perak">
+                <input type="radio" id="Taiping" name="receiverArea" value="Taiping" required>
+                <label for="Taiping">Taiping</label><br>
+                <input type="radio" id="Ipoh" name="receiverArea" value="Ipoh" required>
+                <label for="Ipoh">Ipoh</label><br>
+            </div>
+    
+            <div class="area area-johor" data-id="johor">
+                <input type="radio" id="Johor Bahru" name="receiverArea" value="Johor Bahru" required>
+                <label for="Johor Bahru">Johor Bahru</label><br>
+                <input type="radio" id="Batu Pahat" name="receiverArea" value="Batu Pahat" required>
+                <label for="Batu Pahat">Batu Pahat</label><br>
+            </div>
+            
+        </div>
+
+        <div class="senderInputs">
+            <label for="itemType">Item type: </label>
+            <input type="text" id="itemType" placeholder="food, document, gift, etc" required>   
+        </div>
+        
+        <div class="itemSW">
+            <label for="itemSizeWeight">Item size & weight: </label><br>
+            <input type="radio" id="S" name="itemSizeWeight" value="S" required>
+            <label for="S">SMALL - 34cm x 25cm x 8cm - min 2kg (RM5.00)</label><br>
+            <input type="radio" id="M" name="itemSizeWeight" value="M" required>
+            <label for="M">MEDIUM - 34cm x 25cm x 15cm - min 5kg (+ RM5.00)</label><br>  
+            <input type="radio" id="L" name="itemSizeWeight" value="L" required>
+            <label for="L">LARGE - 38cm x 32cm x 20cm - min 10kg (+ RM10.00)</label><br>  
+        </div>
+
+        <div class="insuranceOption">
+            <label for="insuranceOption">Would you like to add-on JIFFY Protection for only RM3? </label>
+
+            <button type="button" class="insuranceInfo btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">More info</button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Why should you get JIFFY Protection?</h4>
+                    </div>
+                    <div class="modal-body">
+                    <p>We highly value the importance of every item that you send.</p>
+                    <p>In case of any unforseen circumstances such as missing, damaged or delayed parcel, we will compensate up to RM500 with the purchase of JIFFY protection.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+
+            <br>
+            <input type="radio" id="insuranceYes" name="insuranceOption" value="yes" required>
+            <label for="insuranceYes">Yes, please</label><br>
+            <input type="radio" id="insuranceNo" name="insuranceOption" value="no" required>
+            <label for="insuranceNo">No thank you</label><br>
+        </div>
+        <br>
+    </form>
+        <!-- <input type="submit" class="btn btn-success" value="Submit Button"> -->
+        <button type="button" onclick="showInput();" class="btn btn-success" data-toggle="modal" data-target="#submitOrder">Submit Order</button>
+            <!-- Modal -->
+            <div class="submitdialog modal fade" id="submitOrder" role="dialog">
+                <div class="modal-dialog">
+                
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Order Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Sender name: <span id='show_senderName'></span></p>
+                        <p>Sender phone: <span id='show_senderPhone'></span></p>
+                        <p>Sender e-mail: <span id='show_senderEmail'></span></p>
+                        <p>Sender location: <span id='show_senderLocation'></span></p>
+                        <p>Receiver name: <span id='show_receiverName'></span></p>
+                        <p>Receiver phone: <span id='show_receiverPhone'></span></p>
+                        <p>Receiver e-mail: <span id='show_receiverEmail'></span></p>
+                        <p>Receiver state: <span id='show_receiverState'></span></p>
+                        <p>Receiver area: <span id='show_receiverArea'></span></p>
+                        <p>Item type: <span id='show_itemType'></span></p>
+                        <p>Item size & weight: <span id='show_itemSizeWeight'></span></p>
+                        <p>JIFFY Protection: <span id='show_insuranceOption'></span></p>
+                        <br>
+                        <p>Total cost: RM<span id='show_totalCost'></span></p>
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        <br>
+    
+    </div>
+
+<script>
+
+</script>
+<script src="jiffy.js"></script>
+<script src="geocode.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="bundle.js"></script>
+<script src="require.js"></script>
+
+
+</body>
+</html>

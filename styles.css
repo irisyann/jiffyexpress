@@ -1,0 +1,77 @@
+body {
+    background-image: url('/img/background.png');
+    color: white !important;
+
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.senderInputs {
+    margin-top: 10px;
+    display: flex;
+}
+
+.senderLocation {
+    display: block;
+}
+
+input {
+    margin-left: 10px;
+}
+
+.area {
+    display: none;
+}
+
+.area.active {
+    margin-left: 50px;
+    margin-top: 10px;
+    display: block;
+}
+
+.receiverLocationInputs {
+    display: block;
+    margin-top: 10px;
+
+}
+
+.insuranceInfo {
+    display: block;
+    margin-left: 5px;
+}
+
+.insuranceOption {
+    display: block;
+    margin-top: 10px;
+}
+
+.itemSW {
+    display: block;
+    margin-top: 10px;
+
+}
+
+.submit-btn {
+    margin: 10px;
+
+}
+
+form {
+    margin-left: 50px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.submitdialog {
+    color: black;
+}

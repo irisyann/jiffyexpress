@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <h2>Welcome to JIFFY Express!</h2>
+       
+        <div>
+            <label for="selectIdentity">Select your identity: </label>
+            <form action="" id="userType">
+                <input type="radio" id="sender" name="selectIdentity" value="sender">
+                <label for="sender">Sender ( I want to send a parcel )</label><br>
+                <input type="radio" id="rider" name="selectIdentity" value="rider">
+                <label for="rider">Rider</label><br>  
+                <input type="radio" id="driver" name="selectIdentity" value="driver">
+                <label for="driver">Bus driver</label><br>  
+            </form>
+        </div>
+
+    </div>
+
+<script>
+$(document).ready(function() {
+    $("#sender").click(function() {
+        alert("Redirecting to order page...");
+        window.location.href = "sender.html";
+    });
+});
+
+// function identifyUser() {
+
+//    var userType = document.getElementsByName("selectIdentity")[0].value;
+//      if (userType === "sender")
+//     {
+//         msg = `you selected ${userType}`;
+//         document.getElementById("msg").innerHTML = msg;
+//     }
+// }
+</script>
+<script src="jiffy.js"></script>
+
+</body>
+</html>
