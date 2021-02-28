@@ -1,7 +1,6 @@
 body {
     background-image: url('/img/background.png');
     color: white !important;
-
 }
 
 button {
@@ -220,6 +219,10 @@ input {
     border-radius: 5px;
   }
 
+  footer {
+      margin-left: 20px;
+  }
+
   @media screen and (max-width: 600px) {
     .identitybutton {
       float: none;
@@ -228,5 +231,9 @@ input {
 
     .maps {
         width:100%;
+    }
+
+    .jiffyPic {
+        width: 100%;
     }
   }
