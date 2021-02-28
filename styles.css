@@ -225,4 +225,8 @@ input {
       float: none;
       width: 100%;
     }
+
+    .maps {
+        width:100%;
+    }
   }
