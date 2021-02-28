@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="img/icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="welcome">
+             <img src="/img/welcome.png" alt="Welcome to Jiffy Express">
+            <h2>Track your order!</h2>
+        </div>
+       <hr><hr>
+       <div class="container">
+
+        <div class="senderInputs">
+        <form action="">
+            <label for="trackingID">Item type: </label>
+            <input type="text" id="trackingID" placeholder="Enter tracking ID (eg: JIEX008)" required>   
+            <button type="button" class="btn btn-success" onclick="showMap()"><span>Track!</span></button>
+        </form>
+        </div>
+
+        <div id="map">
+            <iframe
+                width="600"
+                height="450"
+                style="border:1"
+                loading="lazy"
+                allowfullscreen
+                alt="Loading..."
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAyn7a1Yn847Ex4WgAZ17p4QAWeA1a-iWc&q=Kepong">
+          </iframe>
+
+    </div>
+
+    <footer>
+        © Developed by Team Mailo
+    </footer>
+
+<script src="jiffy.js"></script>
+
+</body>
+</html>

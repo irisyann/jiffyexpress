@@ -118,6 +118,7 @@ input {
 
 .welcome {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .identitybutton {
@@ -147,12 +148,6 @@ input {
     position: relative;
     transition: 0.5s;
     display: block;
-  }
-  
-  .senderbutton-sub {
-    font-size: small;
-    display: block;
-    transition: none;
   }
 
   .identitybutton span:after {
@@ -211,4 +206,23 @@ input {
   footer {
       margin-top: 100px;
       margin-bottom: 20px;
+  }
+
+  #map {
+      visibility: hidden;
+      margin: 20px;
+      border-radius: 5px;
+  }
+
+  #directionsMap {
+    visibility: hidden;
+    margin: 20px;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .identitybutton {
+      float: none;
+      width: 100%;
+    }
   }

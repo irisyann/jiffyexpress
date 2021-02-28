@@ -126,9 +126,9 @@
             </div>
 
             <br>
-            <input type="radio" id="insuranceYes" name="insuranceOption" value="yes" required>
+            <input type="radio" id="insuranceYes" name="insuranceOption" value="Y" required>
             <label for="insuranceYes" class="labelOptions">Yes, please</label><br>
-            <input type="radio" id="insuranceNo" name="insuranceOption" value="no" required>
+            <input type="radio" id="insuranceNo" name="insuranceOption" value="N" required>
             <label for="insuranceNo" class="labelOptions">No thank you</label><br>
         </div>
         <br>
@@ -160,6 +160,10 @@
                         <p>JIFFY Protection: <span id='show_insuranceOption'></span></p>
                         <br>
                         <p class="totalCostLine">Total cost: RM<span id='show_totalCost' class="totalCost"></span></p>
+                        <p>
+                            Tracking ID: JIEX008
+                            <button type="button" class="btn btn-success" onclick="document.location='tracking.html'">Track Order</button>
+                        </p>
 
                     </div>
                     <div class="modal-footer">
