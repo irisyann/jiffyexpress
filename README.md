@@ -1,7 +1,7 @@
 # JIFFY Express
 Proudly presented to you by Team Mailo.
 [![N|Solid](https://i.imgur.com/j3vPK4e.png)](https://im4.ezgif.com/tmp/ezgif-4-58c3e86be6d5.png)
-### [View JIFFY Express website here](https://peanutooo.github.io/)
+### [View JIFFY Express website here](https://jiffyexpress.netlify.app//)
 ### [View JIFFY Express app prototype here](https://www.figma.com/proto/uUt5NgxW1VoiD0lotQKnMv/JIFFY-Express-Prototype-Team-Mailo?node-id=28%3A2&viewport=123%2C65%2C0.07655967772006989&scaling=scale-down)
 
 ## ✨ Inspiration
